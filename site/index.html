@@ -7,27 +7,45 @@
     <title>Sold</title>
 </head>
 <body>
-    <img src='iu iu.png' alt="NQD"width="5" height="5">
-    <h1>This is a commercial web project!</h1>
+    <p>
+    <img src='iu iu.png' width="450" height="250" tittle="NQD">
+    <img src='https://i.pinimg.com/originals/d0/f8/90/d0f8906e70b55b41cac9c0aa34ba715c.gif' width="250" height="250" tittle="NQD">
+    </p>
+    <h1 id = "top">This is a commercial web project!</h1>
+    <h4><a href = "#end">End this Document!</a></h4>
     <h2>Basic attribute and its structure:</h2>
-    <h4>This is p: paragraph <span><</span>onclick= "alert('Write your alert')" > Customer by onclick</h4>
-    <p onclick = "alert('Đại là của nhi')" >Customer by onclick</p>
+    <h4 >This is p: paragraph &lt;p onclick= "alert('Write your alert')" > Customer by onclick&lt;p&gt;</h4>
     <hr />
-    <h4>Upper are break line by <span><</span>br /<span>></span> .</span><h4>
+    <p id = "&lt;">Instead of using &lt;span&gt;  <b><span style="color :red">&lt;</span></b> &lt;span &gt; for <q><b><span style="color :red">&lt;</span></b></q>, we can use <q>& l t ;</q> one after one. </p>
+    <p id = "&gt;">Instead of using &lt;span&gt;<b><span style="color :red"> &gt; </span></b> &lt; span &gt; for <q><b><span style="color :red">&gt;</span></b></q>, we can use <q>& g t ;</q> one after one. </p>
+    <hr />
+    <p onclick = "alert('Đại là của nhi')" style=color:crimson>Customer by onclick</p>
+    <hr />
+    <h4 id = "horizontal">Upper are break line by &lt;hr /&gt; .</span><h4>
+    <hr />
     <span>This is span: span!, literally meaning it, no line inside!</span>
     <div>This is div: division, always have its own line, can have some span inside!</div>
-    <h4>This is a: have href= "" in opening tag, after that having Link to ST, trong a chứa văn bản liên quan dẫn đến link link.</h4>
-    <a href="iu iu.png">Customer again by link!</a>
+    <hr />
+    <h2>Link:</h2>
+    <p>For intertal-link:</p>
+    <h4>This is a: attribute have (href: hypertext reference)  href= "" in opening tag, after that having Link to ST, trong a chứa văn bản liên quan dẫn đến link link.</h4>
+    <a href="iu iu.png" title="Chu iu">Customer again by link!<div>This <b><span style="color:gray">&lt;</span></b><b><span style="color :blue">div</span></b><b><span style="color:gray">&gt;</span></b> <b><span style="color:gray">&lt;</span></b><b><span style="color :blue">/div</span></b><b><span style="color:gray">&gt;</span></b> line is for more line but still upper link destination. Its by the same href and title attribute.</div></a>
+    <p>For extertal-link:</p>
+    <h4>This is when adding target = "_blank" after href to open new tab for external-link:</h4>
+    <a href= "https://www.facebook.com/quangdai.nguyen.2001" target="_blank" tittle="Chu iu's facebook">Customer's info!</a>
+    <p id = "example">For anchor-link:</p>
+    <p> <a href = "#anchor">Click here to know how!</a></p>
     <hr />
     <h4>This is a without href="", can have div or span inside. </h4>
     <a>I love <div>Bunnies<span>!</span></div></a>
-    <h4>This is a paragraph with <span><</span>br /<span>></span> </h4>
+    <h4 id = "breakline">This is a paragraph with &lt;br /&gt; </h4>
     <p>I love <br />Bunnies</p>
-
-    <blockquote cite="https://www.w3schools.com/css/"> 
-        <p>Ecxactly the same, but not really important because of <q>CSS</q>.</p>
+        <hr />
+    <blockquote cite="https://www.w3schools.com/css/" id = "quote"> 
+        Ecxactly the same, but not really important because of <q>CSS</q>.
     </blockquote>
-    <h4>Upper are Quotes: by <span><</span>blockquote<span>></span> and <span><</span>q<span>></span>. </h4>
+    <h4>Upper are Quotes: by &lt;blockquote&gt; and &lt;q&gt;. </h4>
+    <hr />
     <h2>List:</h2>
     <h4>This is ul: unordered list wrap by ul, only li: list can be inside, same level use li, sub level wrap by ul after li! </h4>
     <ul>
@@ -66,9 +84,13 @@
                         </ol>
                     </li>
                     <li>Structural and semantic markup</li>
-                    <li>Superscript &  Subscrip: Till 12<sup>nd</sup> of December 2030, there will have no CO<sub>2</sub> for human. By sup and sub tags</li>
-                    <li>Line Breaks & Horizontal Rules: by <span><</span>br /<span>></span> and <span><</span>hr /<span>></span>.</li>
-                    <li>Quote: by <span><</span>blockquote<span>></span> and <span><</span>q<span>></span>.</li>
+                    <li>Superscript &  Subscrip: Till 12<sup>nd</sup> of December 2030, there will have no&nbsp;CO<sub>2</sub>&nbsp;for&nbsp;human. By sup and sub tags</li>
+                    <li>Line Breaks & Horizontal Rules: by <a href= "#breakline">&lt;br /&gt;</a> and <a href= "#horizontal">&lt;hr /&gt;</a>.</li>
+                    <li>Quote: by <a href= "#quote"><b><span style="color:gray">&lt;</span></b><b><span style="color :blue">blockquote</span></b><b><span style="color:gray">&gt;</span></b> and <b><span style="color:gray">&lt;</span></b><b><span style="color :blue">q</span></b><b><span style="color:gray">&gt;</span></b>or <b><span style="color :blue">& quot ;</span></b></a> for more fit into other encoding windows.</li>
+                    <li>Show <a href= "#&lt;"><q><b><span style="color :red">&lt;</span></b></q></a>  and  <a href= "#&gt;"><q><b><span style="color :red">&gt;</span></b></q> </a> </li>
+                    <li><a href= "#copyright" >Copyright</a> &copy; by <b><span style="color :blue">& copy ;</span></b> without space between.</li>
+                    <li>This&nbsp;sentence&nbsp;is&nbsp;an&nbsp;example&nbsp;for&nbsp;non&nbsp;breaking&nbsp;space&nbsp;by<b><span style="color:gray">&lt;</span></b><b><span style="color :blue">&nbsp;&&nbsp;nbsp&nbsp;;</span></b><b><span style="color:gray">&gt;</span></b> without space between. Also for more space like&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this but we should never use this way to add more space between, havent know yet.</li>
+                    <li id = "anchor">Anchor is a marked destination by adding <q><b><span style="color :red"> id = "example"</span></b></q> in the opening of any tag where you want it to be a destination and adding <q><b><span style="color :red">&lt;a href = "#example"&gt; Message that have link style like this: <a href = "#example" >Click here to go to example destination!</a> &lt;/a&gt;</span></b></q> or back to top to see another interesting example. P/s: Jump to one anchor and look at the URL to see some mark-book trick.</li>
                    </ol>
                 </li>
             </ol>
@@ -76,7 +98,8 @@
         </li>
         <li>CSS</li>
     </ol>
-
-    <h3>This is the end!<h3>
+    <!--this line is ignored by browser on purpose!-->
+    <p id= "copyright">Copyright &copy; 2021 Nông Sản Xanh | All rights reserved </p>
+    <h3 id="end">This is the end! <a href = "#top">Back to Top</a><h3>
 </body>
 </html>
