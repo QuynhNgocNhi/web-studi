@@ -5,15 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sold</title>
-</head>
+    <style>
+        @keyframes trip {
+            0%   { left: 1500px ; } 
+            100% { left: -270px ; }
+        }
+       /* header{
+           
+            background-image: url("trip.gif");
+            background-repeat: no-repeat;
+            background-position:right top;
+            margin-bottom: 5%;
+            width: 300px;
+            height: 250px;
+            position: relative;
+            animation-name: trip;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+          
+            }*/
+            header{padding: 50px;}
+/* The element to apply the animation to */
+        .trip{
+            width: 300px;
+            height: 250px;
+            position: relative;
+            animation-name: trip;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            background-size: contain;   
+        }
+       p, a > div, .bunnies {
+            font-family: 'Courier New';
+            color:black;
+            width: auto;
+            text-align:start;
+            margin: 20px;
+        }
+        *{
+            
+            font-size: 20px;
+            font-family: garamond, monospace;
+        }
+       
+        .orderlist, .unorderlist {
+            font-family: 'Courier New', Courier, monospace;
+            border: black solid 1px;
+            padding: 20px;
+            margin: 40px;
+            background-color: rgb(255, 205, 205);
+            opacity: .9;
+        }
+        #top, #end{
+            text-align: right;
+            color: rgb(255, 255, 255);
+        }
+        h1,h2,h3,h5,h6,div{ margin: 20px;}
+        h4{ 
+            margin: 20px;
+            font-size: 20px;
+        }
+       h2{
+           font-size: 30px;
+        }
+        .quote {
+            outline: rgb(255, 255, 255) solid 10px; 
+            border: #000000 solid 1px; 
+            padding: 20px;
+        }
+        
+        p{
+            margin-bottom: 0.15em;  
+        }
+        #copyright{
+            font-family: Georgia;
+        }
+        /*căn lề*/
+        .page-wrapper {
+            width: 100%;
+            margin: 0.25em auto;
+            max-width: 1800px;
+            position: relative;
+            padding: 0 20PX;
+        }
+        /*for button menu*/
+       
+       
+       
+        .dropdown:hover .dropdown-content{
+            display: block;
+            position: absolute;
+        }
+        .menubutton{
+            background-color: rgb(255, 255, 255);
+            font-family: "open sans";
+            border: none;
+            float: left;
+        }
+         /*menu */
+         .menubutton:active, .menubutton:hover{
+            border-top: 1px rgb(248, 120, 120) solid;
+            border-bottom: 1px rgb(248, 120, 120) solid;
+        }
+        .drop:hover .dropdown-content{
+            display: block;
+        }
+       
+        .drop span{ 
+            content: "\00bb";
+           font-family: Georgia;
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .drop:hover span:after{
+            opacity: 1;
+            color: #000000;
+            right: 0;
+        }
+         /*submenu*/
+         
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            /*background-color: rgb(255, 240, 240);*/
+            min-width: 120px;
+        }
+        .dropdown-content a{
+            display: block;
+            font-family: Georgia, 'Times New Roman', Times, serif   ;
+            padding: 6px 10px;
+            text-decoration: none   ;
+            
+            
+        }
+        .dropdown-content a:hover{
+            opacity: .7;
+        }
+        /*.menubutton {
+            transition-duration: 0.4s;
+        }*/
+        /*back round */
+         body {
+            margin: 50px;
+        } 
+        .vietnamese{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 90%;
+        }
+        
+    </style>
+    </head>
 <body>
+    <header>
+    <div class= "dropdown">
+        <button class="menubutton drop"><span>Trang chủ</span</button>
+        <div class="dropdown-content">
+            <a href = "boy.jpg">Boy</a>
+            <a href ="girl.jpg">Girl</a>
+            
+        </div>
+    </div>
+</header>
     <p>
-    <img src='iu iu.png' width="450" height="250" tittle="NQD">
-    <img src='https://i.pinimg.com/originals/d0/f8/90/d0f8906e70b55b41cac9c0aa34ba715c.gif' width="250" height="250" tittle="NQD">
+    <h1  style = "text-align: center;margin-top: 50px; font-size: 30px;">This is a commercial web project!</h1>
+        
+    <div style="margin-top: 0px ;">  </div>
     </p>
-    <h1 id = "top">This is a commercial web project!</h1>
-    <h4><a href = "#end">End this Document!</a></h4>
-    <h2>Basic attribute and its structure:</h2>
+
+    <!--<img src = "trip.gif" class = 'trip'>*/-->
+    <img src = "trip.gif" class = 'trip'>
+    <h4 id = "top">This is the opening!<a href = "#end" >End this Document!</a></h4>
+    <h2 class="page-wrapper" >Basic attribute and its structure:</h2>
     <h4 >This is p: paragraph &lt;p onclick= "alert('Write your alert')" > Customer by onclick&lt;p&gt;</h4>
     <hr />
     <p id = "&lt;">Instead of using &lt;span&gt;  <b><span style="color :red">&lt;</span></b> &lt;span &gt; for <q><b><span style="color :red">&lt;</span></b></q>, we can use <q>& l t ;</q> one after one. </p>
@@ -22,33 +189,42 @@
     <p onclick = "alert('Đại là của nhi')" style=color:crimson>Customer by onclick</p>
     <hr />
     <h4 id = "horizontal">Upper are break line by &lt;hr /&gt; .</span><h4>
+
     <hr />
-    <span>This is span: span!, literally meaning it, no line inside!</span>
+    <div><span>This is span: span!, literally meaning it, no line inside!</span></div>
+    
     <div>This is div: division, always have its own line, can have some span inside!</div>
     <hr />
+
     <h2>Link:</h2>
+    
     <p>For intertal-link:</p>
-    <h4>This is a: attribute have (href: hypertext reference)  href= "" in opening tag, after that having Link to ST, trong a chứa văn bản liên quan dẫn đến link link.</h4>
-    <a href="iu iu.png" title="Chu iu">Customer again by link!<div>This <b><span style="color:gray">&lt;</span></b><b><span style="color :blue">div</span></b><b><span style="color:gray">&gt;</span></b> <b><span style="color:gray">&lt;</span></b><b><span style="color :blue">/div</span></b><b><span style="color:gray">&gt;</span></b> line is for more line but still upper link destination. Its by the same href and title attribute.</div></a>
-    <p>For extertal-link:</p>
+    <h4>This is a: attribute have (href: hypertext reference)  href= "" in opening tag, after that having Link to ST, a contain relevant paragraph lead to link.</h4>
+    <blockquote class = 'quote'><a href="iu iu.png" title="Chu iu" style="color: rgb(248, 120, 120);font-family:'Courier New'; font-size: 20px;" >Customer again by link!
+        <div style="color: rgb(248, 120, 120);font-family:'Courier New'; font-size: 20px;">This <b><span  style="color:gray">&lt;</span></b><b><span style="color :blue">div</span></b><b><span style="color:gray">&gt;</span></b> <b><span style="color:gray">&lt;</span></b><b><span style="color :blue">/div</span></b><b><span style="color:gray">&gt;</span></b> line is for more line but still upper link destination. Its by the same href and title attribute.</div></a>
+    </blockquote>
+        <p>For extertal-link:</p>
     <h4>This is when adding target = "_blank" after href to open new tab for external-link:</h4>
-    <a href= "https://www.facebook.com/quangdai.nguyen.2001" target="_blank" tittle="Chu iu's facebook">Customer's info!</a>
-    <p id = "example">For anchor-link:</p>
-    <p> <a href = "#anchor">Click here to know how!</a></p>
+    <blockquote class = 'quote'><a href= "https://www.facebook.com/quangdai.nguyen.2001" target="_blank" tittle="Chu iu's facebook"><p>Customer's info!</p></a></blockquote>
+    <p id = "example" >For anchor-link:</p>
+    <h4>This is when adding id = "example" to opening tag, we can have other position point back to this with href = "#example in a tag." </h4>
+    <blockquote class = 'quote'>
+    <a href = "#anchor"><p> Click here to know how!</p></a>
+    </blockquote>
     <hr />
-    <h4>This is a without href="", can have div or span inside. </h4>
-    <a>I love <div>Bunnies<span>!</span></div></a>
+    <h4>This is a without href="", have div and span inside. </h4>
+    <a class = " hi bunnies">I love <div>Bunnies<span>!</span></div></a>
     <h4 id = "breakline">This is a paragraph with &lt;br /&gt; </h4>
-    <p>I love <br />Bunnies</p>
+    <a class = " hi bunnies">I love <br /><p>Bunnies!</p></a>
         <hr />
-    <blockquote cite="https://www.w3schools.com/css/" id = "quote"> 
+    <blockquote class = "quote", cite="https://www.w3schools.com/css/css_outline.asp" id = "quote" > 
         Ecxactly the same, but not really important because of <q>CSS</q>.
     </blockquote>
     <h4>Upper are Quotes: by &lt;blockquote&gt; and &lt;q&gt;. </h4>
     <hr />
     <h2>List:</h2>
-    <h4>This is ul: unordered list wrap by ul, only li: list can be inside, same level use li, sub level wrap by ul after li! </h4>
-    <ul>
+    <h4 >This is ul: unordered list wrap by ul, only li: list can be inside, same level use li, sub level wrap by ul after li! </h4>
+    <ul class = "unorderlist">
         <li>Javascript</li>
         <li> Html 
             <ul>
@@ -62,44 +238,119 @@
                     <li>Embedded content</li>
                     <li>Interactive content</li>
                    </ul>
-                </li></ul>
-            
+                </li>
+            </ul>
         </li>
         <li>CSS</li>
     </ul>
     <h4>This is ol: ordered list wrap by ol,just like ul but sub level wrap by ol after li! </h4>
-    <ol>
+    <ol class = "orderlist" >
         <li>Javascript</li>
         <li> Html 
             <ol>
-                <h2><li>Text:</h2>
-                   <ol>
-                    <li>Heading anf paragraph</li>
-                    <li>Style:
-                        <ol>
-                            <li>This word is intentionally created <b>Bold</b> by b tag.</li>
-                            <li>This word is intentionally created <i>Italic</i> by i tag.</li>
-                            <li>This word is intentionally created <strong>Strong</strong> by strong tag.</li>
-                            <li>This word is intentionally created <em>Emphasis</em> by em tag.</li>
-                        </ol>
-                    </li>
-                    <li>Structural and semantic markup</li>
-                    <li>Superscript &  Subscrip: Till 12<sup>nd</sup> of December 2030, there will have no&nbsp;CO<sub>2</sub>&nbsp;for&nbsp;human. By sup and sub tags</li>
-                    <li>Line Breaks & Horizontal Rules: by <a href= "#breakline">&lt;br /&gt;</a> and <a href= "#horizontal">&lt;hr /&gt;</a>.</li>
-                    <li>Quote: by <a href= "#quote"><b><span style="color:gray">&lt;</span></b><b><span style="color :blue">blockquote</span></b><b><span style="color:gray">&gt;</span></b> and <b><span style="color:gray">&lt;</span></b><b><span style="color :blue">q</span></b><b><span style="color:gray">&gt;</span></b>or <b><span style="color :blue">& quot ;</span></b></a> for more fit into other encoding windows.</li>
-                    <li>Show <a href= "#&lt;"><q><b><span style="color :red">&lt;</span></b></q></a>  and  <a href= "#&gt;"><q><b><span style="color :red">&gt;</span></b></q> </a> </li>
-                    <li><a href= "#copyright" >Copyright</a> &copy; by <b><span style="color :blue">& copy ;</span></b> without space between.</li>
-                    <li>This&nbsp;sentence&nbsp;is&nbsp;an&nbsp;example&nbsp;for&nbsp;non&nbsp;breaking&nbsp;space&nbsp;by<b><span style="color:gray">&lt;</span></b><b><span style="color :blue">&nbsp;&&nbsp;nbsp&nbsp;;</span></b><b><span style="color:gray">&gt;</span></b> without space between. Also for more space like&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this but we should never use this way to add more space between, havent know yet.</li>
-                    <li id = "anchor">Anchor is a marked destination by adding <q><b><span style="color :red"> id = "example"</span></b></q> in the opening of any tag where you want it to be a destination and adding <q><b><span style="color :red">&lt;a href = "#example"&gt; Message that have link style like this: <a href = "#example" >Click here to go to example destination!</a> &lt;/a&gt;</span></b></q> or back to top to see another interesting example. P/s: Jump to one anchor and look at the URL to see some mark-book trick.</li>
-                   </ol>
+                <li>Heading anf paragraph</li>
+                <li>Style:
+                    <ol>
+                        <li>This word is intentionally created <b>Bold</b> by b tag.</li>
+                        <li>This word is intentionally created <i>Italic</i> by i tag.</li>
+                        <li>This word is intentionally created <strong>Strong</strong> by strong tag.</li>
+                        <li>This word is intentionally created <em>Emphasis</em> by em tag.</li>
+                    </ol>
+                </li>
+                
+                <li>Structural and semantic markup</li>
+                <li>Superscript &  Subscrip: Till 12<sup>nd</sup> of December 2030, there will have no&nbsp;CO<sub>2</sub>&nbsp;for&nbsp;human. By sup and sub tags</li>
+                <li>Line Breaks & Horizontal Rules: by <a href= "#breakline">&lt;br /&gt;</a> and <a href= "#horizontal">&lt;hr /&gt;</a>.</li>
+                <li>Quote: by <a href= "#quote"><b><span style="color:gray">&lt;</span></b><b><span style="color :blue">blockquote</span></b><b><span style="color:gray">&gt;</span></b> and <b><span style="color:gray">&lt;</span></b><b><span style="color :blue">q</span></b><b><span style="color:gray">&gt;</span></b>or <b><span style="color :blue">& quot ;</span></b></a> for more fit into other encoding windows.</li>
+                <li>Show <a href= "#&lt;"><q><b><span style="color :red">&lt;</span></b></q></a>  and  <a href= "#&gt;"><q><b><span style="color :red">&gt;</span></b></q> </a> </li>
+                <li>Show <a href= "#copyright" >Copyright</a> &copy; by <b><span style="color :blue">& copy ;</span></b> without space between.</li>
+                <li>This&nbsp;sentence&nbsp;is&nbsp;an&nbsp;example&nbsp;for&nbsp;non&nbsp;breaking&nbsp;space&nbsp;by<b><span style="color:gray">&lt;</span></b><b><span style="color :blue">&nbsp;&&nbsp;nbsp&nbsp;;</span></b><b><span style="color:gray">&gt;</span></b> without space between. Also for more space like&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this but we should never use this way to add more space between, havent know yet.</li>
+                <li id = "anchor">
+                    Anchor is a marked destination by adding 
+                    <q><b><span style="color :blue"> id = "example"</span></b></q> 
+                    in the opening of any tag where you want it to be a destination and adding 
+                    <q><b>
+                        <span style="color :blue">&lt;a href = "#example"&gt; Message that have link style like this: 
+                        <a href = "#example" >Click here to go to example destination!</a>
+                            &lt;/a&gt;</span>
+                    </b></q>
+                        or back to top to see another interesting example. P/s: Jump to one anchor and look at the URL to see some mark-book trick.
+                </li>
+                <li>Animation</li>
+                <li>Background-color</li>
+                <li>Dropdown:hover</li>
+            </ol>
+        </li>
+        <li>CSS:
+            <ol>
+                <li>Simple Selector: For example: .class1, #id1, p, h1 { color : red; }
+                    <ul>
+                        <li>Class: .classname {}
+                            <ul>
+                                <li>Pseudo selector:
+                                <ul>
+                                    <li>:hover</li>
+                                    <li>:active</li>
+                                    <li>:visited</li>
+                                    <li>:link</li>
+                                    <li>:nth-child(1234... or odd (xen kẽ))</li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Id: #id {} </li>
+                        <li>Else: tag {}</li>
+                    </ul>
+                </li>
+                <li>Combine Selector:
+                    <ul>
+                       <li>p with a class: p.classname {}</li> 
+                       <li>Direct div child of p: p > div {}</li>
+                       <li>All div child of p: p div {}</li>
+                    </ul>
+                </li>
+                <li>Size: by pixel
+                    <ul>
+                        <li>Set size = 120% of browser genaral size: <span style="color :#bb5400">text-size: 120%</span>;</li>
+                        <li>Set size = 2 times as the current size:  <span style="color :#bb5400">text-size: 2em</span>;</li>
+                    </ul>
+                </li>
+                <li>Box:
+                    <ul>
+                        <li>Margin<span class=vietnamese>(viền)</span>: top right button left. vd: <span style="color :#bb5400">margin: 50px </span>(by pixel)</li>
+                        <li>Border<span class=vietnamese>(lề)</span>: 1px #000000 solid (#red-green-blue)</li>
+                        <li>Padding<span class=vietnamese>(đệm)</span>: top right button left. vd: <span style="color :#bb5400">padding: 50px </span>(by pixel)</li>
+                    </ul>
+                </li>
                 </li>
             </ol>
-             
         </li>
-        <li>CSS</li>
     </ol>
-    <!--this line is ignored by browser on purpose!-->
-    <p id= "copyright">Copyright &copy; 2021 Nông Sản Xanh | All rights reserved </p>
-    <h3 id="end">This is the end! <a href = "#top">Back to Top</a><h3>
+    <div id= "copyright" style= "text-align: center;">Copyright &copy; 2021 Nông Sản Xanh | All rights reserved </div>
+    <h3 id="end" style= "text-align:right;">This is the end! <a href = "#top" >Back to Top!</a><h3>
+    <span class = "dropdown">
+        <img src='boy.jpg' width="250" height="250" tittle="NQD" id = "boy" style = "padding-left: 200px; float: left; cursor:-webkit-grab;">
+        <span class = "dropdown-content">
+            <img  src='https://2.bp.blogspot.com/-DSYytGwJT7M/XNtMfDfrBMI/AAAAAAAMh7k/9qVV8JE49SY-tFLmT4wbwOTd9MCy-rbmgCLcBGAs/s1600/AS0005269_00.gif' width="250" height="250" tittle="NQD" >
+        </span>
+       
+    </span>
+    
+    <span class = "dropdown">
+        <img src='girl.jpg' width="250" height="250" tittle="NQD" id = "boy" style = "padding-right: 200px; float: right;">
+        <span class = "dropdown-content">
+            <img  src='https://4.bp.blogspot.com/-DV8zj3oNPO8/XZKl8Y1_KkI/AAAAAAAMsvI/HEq47t0TPmYhX0b2igMkkxbcPQPbUXR2gCLcBGAsYHQ/s1600/AS0005827_02.gif' width="250" height="230" tittle="NQD"style=" padding-left: 1250px;cursor:-webkit-grab;">
+        </span>
+    </span>
+
+    <!--this line is ignored by browser on purpose
+   
+        <h2>Dropdown:</h2>
+    <div class = "dropdown">
+        <img src='iu iu.png' width="45" height="25" tittle="NQD">
+        <div class = "dropdown-content">
+            <img src='iu iu.png' width="450" height="250" tittle="NQD">
+        </div>
+    </div> !-->
 </body>
 </html>

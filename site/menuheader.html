@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    
+       
+    .dropdown:hover .dropdown-content{
+            display: block;
+            position: absolute;
+        }
+    .menubutton{
+        background-color: rgb(255, 255, 255);
+        font-family: "open sans";
+        border: none;
+        float: left;
+    }
+        /*menu */
+        .menubutton:active, .menubutton:hover{
+        border-top: 1px rgb(248, 120, 120) solid;
+        border-bottom: 1px rgb(248, 120, 120) solid;
+    }
+    .drop:hover .dropdown-content{
+        display: block;
+    }
+    
+    .drop span{ 
+        content: "\00bb";
+        font-family: Georgia;
+        text-align: center;
+        font-size: 24px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+    .drop:hover span:after{
+        opacity: 1;
+        color: #000000;
+        right: 0;
+    }
+        /*submenu*/
+        
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        /*background-color: rgb(255, 240, 240);*/
+        min-width: 120px;
+    }
+    .dropdown-content a{
+        display: block;
+        font-family: Georgia, 'Times New Roman', Times, serif   ;
+        padding: 6px 10px;
+        text-decoration: none   ;
+        
+        
+    }
+    .dropdown-content a:hover{
+        opacity: .7;
+    }
+    .trip{
+        width: 300px;
+        height: 250px;
+        position: relative;
+        animation-name: trip;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        background-size: contain;   
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <header>
+            <div class= "dropdown">
+                <button class="menubutton drop"><span>Trang chủ</span</button>
+                <div class="dropdown-content">
+                    <a href = "boy.jpg">Boy</a>
+                    <a href ="girl.jpg">Girl</a>
+                    
+                </div>
+            </div>
+        </header>
+    </header>
+</body>
+</html>
