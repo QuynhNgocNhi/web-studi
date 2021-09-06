@@ -1,0 +1,109 @@
+
+li{
+    margin-top: 10px;
+}
+.row{
+    width:41.66%;
+    height: 450px;
+    overflow: auto;
+    float: left;
+    
+}
+.icon::before{
+    
+        content: "\00bb";
+        font-size: 1.5em;
+        top: -1;
+        margin-right: 10px;
+        
+
+    }
+}
+/*Large Device*/
+@media (min-width: 1200px) {
+    .lcol1, .lco2, .lco3, .lco4, .lco5, .lco6, .lco7, .lco8, .lco9, .lco10, .lco11, .lco12{
+        float: left;
+        
+    }
+    .lcol1{
+        width: 8.33%;
+    }
+    .lco2{
+        width: 16.66%;
+    }
+    .lco3{
+        width: 25%;
+    }
+    .lco4{
+        width: 33%;
+    }
+    .lco5{
+        width: 41.66%;
+    }
+    .lco6{
+        width: 50%;
+    }
+    .lco7{
+        width: 58.33%;
+    }
+    .lco8{
+        width: 66.66%;
+    }
+    .lco9{
+        width: 74.99%;
+    }
+    .lcol10{
+        width: 83.33%;
+    }
+    .lcol11{
+        width: 91.66%;
+    }
+    .lcol12{
+        width: 100%;
+    }
+
+}
+/*Medium Device*/
+@media (min-width: 950px) and (max-width:1199px) {
+    .mcol1, .mco2, .mco3, .mco4, .mco5, .mco6, .mco7, .mco8, .mco9, .mco10, .mco11, .mco12{
+        float: left;
+        
+    }
+    .mcol1{
+        width: 8.33%;
+    }
+    .mco2{
+        width: 16.66%;
+    }
+    .mco3{
+        width: 25%;
+    }
+    .mco4{
+        width: 33%;
+    }
+    .mco5{
+        width: 41.66%;
+    }
+    .mco6{
+        width: 50%;
+    }
+    .mco7{
+        width: 58.33%;
+    }
+    .mco8{
+        width: 66.66%;
+    }
+    .mco9{
+        width: 74.99%;
+    }
+    .mcol10{
+        width: 83.33%;
+    }
+    .mcol11{
+        width: 91.66%;
+    }
+    .mcol12{
+        width: 100%;
+    }
+
+}

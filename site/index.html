@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sold</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        @keyframes trip {
-            0%   { left: 1500px ; } 
-            100% { left: -270px ; }
+
+       
+        header{
+            padding: 50px;
         }
        /* header{
            
@@ -24,8 +26,12 @@
             animation-iteration-count: infinite;
           
             }*/
-            header{padding: 50px;}
+            
 /* The element to apply the animation to */
+        @keyframes trip {
+                    0%   { left: 1500px ; } 
+                    100% { left: -270px ; }
+                }
         .trip{
             width: 300px;
             height: 250px;
@@ -43,7 +49,7 @@
             margin: 20px;
         }
         *{
-            
+            box-sizing: border-box;
             font-size: 20px;
             font-family: garamond, monospace;
         }
@@ -51,11 +57,13 @@
         .orderlist, .unorderlist {
             font-family: 'Courier New', Courier, monospace;
             border: black solid 1px;
-            padding: 20px;
+            padding: 3%;
             margin: 40px;
+            
             background-color: rgb(255, 205, 205);
             opacity: .9;
         }
+        
         #top, #end{
             text-align: right;
             color: rgb(255, 255, 255);
@@ -91,92 +99,45 @@
         /*for button menu*/
        
        
-       
-        .dropdown:hover .dropdown-content{
-            display: block;
-            position: absolute;
-        }
-        .menubutton{
-            background-color: rgb(255, 255, 255);
-            font-family: "open sans";
-            border: none;
-            float: left;
-        }
-         /*menu */
-         .menubutton:active, .menubutton:hover{
-            border-top: 1px rgb(248, 120, 120) solid;
-            border-bottom: 1px rgb(248, 120, 120) solid;
-        }
-        .drop:hover .dropdown-content{
-            display: block;
-        }
-       
-        .drop span{ 
-            content: "\00bb";
-           font-family: Georgia;
-            text-align: center;
-            font-size: 24px;
-            padding: 20px;
-            width: 200px;
-            transition: all 0.5s;
-            cursor: pointer;
-            margin: 5px;
-        }
-        .drop:hover span:after{
-            opacity: 1;
-            color: #000000;
-            right: 0;
-        }
-         /*submenu*/
-         
-        .dropdown-content{
-            display: none;
-            position: absolute;
-            /*background-color: rgb(255, 240, 240);*/
-            min-width: 120px;
-        }
-        .dropdown-content a{
-            display: block;
-            font-family: Georgia, 'Times New Roman', Times, serif   ;
-            padding: 6px 10px;
-            text-decoration: none   ;
-            
-            
-        }
-        .dropdown-content a:hover{
-            opacity: .7;
-        }
+        
         /*.menubutton {
             transition-duration: 0.4s;
         }*/
         /*back round */
-         body {
+        body{
             margin: 50px;
+            
         } 
         .vietnamese{
             font-family: 'Times New Roman', Times, serif;
             font-size: 90%;
         }
+        .dropdown{
+        position: relative;
         
+    }
+
+        .dropdown-content{
+            display: none;
+            position: relative;
+        }
+        .dropdown:hover span {
+            display: block;
+            position: absolute;
+        }
+
     </style>
+    
     </head>
 <body>
     <header>
-    <div class= "dropdown">
-        <button class="menubutton drop"><span>Trang chủ</span</button>
-        <div class="dropdown-content">
-            <a href = "boy.jpg">Boy</a>
-            <a href ="girl.jpg">Girl</a>
-            
-        </div>
-    </div>
-</header>
     <p>
     <h1  style = "text-align: center;margin-top: 50px; font-size: 30px;">This is a commercial web project!</h1>
         
     <div style="margin-top: 0px ;">  </div>
     </p>
-
+</header>
+<body>
     <!--<img src = "trip.gif" class = 'trip'>*/-->
     <img src = "trip.gif" class = 'trip'>
     <h4 id = "top">This is the opening!<a href = "#end" >End this Document!</a></h4>
@@ -223,8 +184,12 @@
     <h4>Upper are Quotes: by &lt;blockquote&gt; and &lt;q&gt;. </h4>
     <hr />
     <h2>List:</h2>
-    <h4 >This is ul: unordered list wrap by ul, only li: list can be inside, same level use li, sub level wrap by ul after li! </h4>
-    <ul class = "unorderlist">
+    <h4 class = "row icon" style="margin: unset; height: unset;  float: left;" > This is ul: unordered list wrap by ul, only li: list can be inside, same level use li, sub level wrap by ul after li! </h4>
+
+
+
+
+    <ul class = "unorderlist row" style="clear:left;">
         <li>Javascript</li>
         <li> Html 
             <ul>
@@ -243,8 +208,8 @@
         </li>
         <li>CSS</li>
     </ul>
-    <h4>This is ol: ordered list wrap by ol,just like ul but sub level wrap by ol after li! </h4>
-    <ol class = "orderlist" >
+    <h4 class = "row icon" style="margin: unset; height: unset; float: left;"> This is ol: ordered list wrap by ol,just like ul but sub level wrap by ol after li! </h4>
+    <ol class = "orderlist row" >
         <li>Javascript</li>
         <li> Html 
             <ol>
@@ -293,7 +258,7 @@
                                     <li>:active</li>
                                     <li>:visited</li>
                                     <li>:link</li>
-                                    <li>:nth-child(1234... or odd (xen kẽ))</li>
+                                    <li>:nth-child(1234... or odd <span class=vietnamese>(xen kẽ))</span></li>
                                 </ul>
                                 </li>
                             </ul>
@@ -315,34 +280,89 @@
                         <li>Set size = 2 times as the current size:  <span style="color :#bb5400">text-size: 2em</span>;</li>
                     </ul>
                 </li>
-                <li>Box:
+                <li>Box model:
                     <ul>
-                        <li>Margin<span class=vietnamese>(viền)</span>: top right button left. vd: <span style="color :#bb5400">margin: 50px </span>(by pixel)</li>
-                        <li>Border<span class=vietnamese>(lề)</span>: 1px #000000 solid (#red-green-blue)</li>
-                        <li>Padding<span class=vietnamese>(đệm)</span>: top right button left. vd: <span style="color :#bb5400">padding: 50px </span>(by pixel)</li>
+                        <li>Component:
+                            <ul>
+                                <li>(Outside the box)Margin<span class=vietnamese>(viền)</span>: top right button left. vd: <span style="color :#bb5400">margin: 50px </span>(by pixel)(top and bottom are cumulative and collapsing margins: the bigger win)</li>
+                                <li>Border<span class=vietnamese>(lề)</span>: 1px #000000 solid (#red-green-blue)</li>
+                                <li>Padding<span class=vietnamese>(đệm)</span>: top right button left. vd: <span style="color :#bb5400">padding: 50px </span>(by pixel)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Box-sizing: border-box --> make box size exactly define by width and high, no changing content box.
+                        </li>
+                        <li>Scroll bar to fix content-overflow because of border-box: overflow: auto (:scroll double scroll bar).</li>
+                        <li>Backround:
+                            <ul> 
+                                <li>background-image: url("trip.gif"); </li>
+                                <li>background-color: blue </li>    
+                                <li>background-repeat: no-repeat </li>
+                                <li>background-position: right top </li>
+                                <li>background-size: 50px </li>
+                                
+                                
+                            </ul>
+                        </li>
+                        <li>Position:
+                            <ul>
+                                <li>float: left --> make the after menubutton float to the left from its prior </li>
+                                <li>float: right --> opposite from above  </li>
+                                <li>Stop the float by: clear: left; or clear: right; or clear: both;</li>
+                                <li>position: relative --> its spot is an anchor for its offset(top, left, bottom, right), remain its spot. </li>
+                                <li>position: absolue --> its ancestor (already set position) is an anchor for its offset(top, left, bottom, right), lose its spot.</li>
+                            </ul>
+                        </li>
+                        <li>Responsive:
+                            <ul>
+                                <li>use width by %: width: 50%</li>
+                                <li>Media query:
+                                    <ul>
+                                        <li>@media (min-width: 768px) and (max-width: 991px) { #p1 { width: 50% } }</li>
+                                        <li>@media (min-width: 1200px), (min-width: 992px) {#p1 { width: 50% } }</li>
+                                    </ul>
+                                </li>
+                                <li> 12 column grid layout:
+                                    <ul>
+                                        <li>100% /12: 8,33%</li>
+                                        <li>100% /6: 16,66</li>
+                                        <li>100% /4: 25%</li>
+                                        <li>100% /2: 50%</li>
+
+                                    </ul>
+                                </li>
+                                <li>set meta no zoom out on phone screen(tell them this is a responsive WEBSITE): <div>&lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt; </div>  </li>
+                            </ul>
+                        </li>
+
                     </ul>
+
+                    
                 </li>
                 </li>
             </ol>
         </li>
     </ol>
-    <div id= "copyright" style= "text-align: center;">Copyright &copy; 2021 Nông Sản Xanh | All rights reserved </div>
+    <div id= "copyright" style= "text-align: center; clear: both;">Copyright &copy; 2021 Nông Sản Xanh | All rights reserved </div>
     <h3 id="end" style= "text-align:right;">This is the end! <a href = "#top" >Back to Top!</a><h3>
+    </body>
+
+<footer>
     <span class = "dropdown">
-        <img src='boy.jpg' width="250" height="250" tittle="NQD" id = "boy" style = "padding-left: 200px; float: left; cursor:-webkit-grab;">
+        <img src='boy.jpg' width="250" height="250" tittle="NQD" id = "boy" style = " float: left; cursor:-webkit-grab; margin-left: 300px;">
         <span class = "dropdown-content">
-            <img  src='https://2.bp.blogspot.com/-DSYytGwJT7M/XNtMfDfrBMI/AAAAAAAMh7k/9qVV8JE49SY-tFLmT4wbwOTd9MCy-rbmgCLcBGAs/s1600/AS0005269_00.gif' width="250" height="250" tittle="NQD" >
+            <img  src='https://2.bp.blogspot.com/-DSYytGwJT7M/XNtMfDfrBMI/AAAAAAAMh7k/9qVV8JE49SY-tFLmT4wbwOTd9MCy-rbmgCLcBGAs/s1600/AS0005269_00.gif' width="250" height="250" tittle="NQD" style="box-sizing: content-box; margin-left: -100px; ">
         </span>
        
     </span>
     
     <span class = "dropdown">
-        <img src='girl.jpg' width="250" height="250" tittle="NQD" id = "boy" style = "padding-right: 200px; float: right;">
+        <img src='girl.jpg' width="250" height="250" tittle="NQD" id = "boy" style=" margin-left: 300px; float: left; cursor:-webkit-grab;">
         <span class = "dropdown-content">
-            <img  src='https://4.bp.blogspot.com/-DV8zj3oNPO8/XZKl8Y1_KkI/AAAAAAAMsvI/HEq47t0TPmYhX0b2igMkkxbcPQPbUXR2gCLcBGAsYHQ/s1600/AS0005827_02.gif' width="250" height="230" tittle="NQD"style=" padding-left: 1250px;cursor:-webkit-grab;">
+            <img  src='https://4.bp.blogspot.com/-DV8zj3oNPO8/XZKl8Y1_KkI/AAAAAAAMsvI/HEq47t0TPmYhX0b2igMkkxbcPQPbUXR2gCLcBGAsYHQ/s1600/AS0005827_02.gif' width="250" height="230" tittle="NQD" style="margin-left: 1220px;">
         </span>
     </span>
-
+</footer>
     <!--this line is ignored by browser on purpose
    
         <h2>Dropdown:</h2>
