@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sold</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <style>
 
        
@@ -130,7 +131,37 @@
     
     </head>
 <body>
+  <script type= text/javascript>
+ function hello_name(){
+   var noname="";
+//  console.log("document.getElementById('input')");
+  
+  if (document.getElementById('input').value == noname)
+  {
+    
+document.getElementById("header").innerHTML = ("<h1>Hello ?</h1>")
+document.getElementById("header").style.color = "red";
+  }
+  else
+{
+  document.getElementById("header").innerHTML = ("<h1>Hello </h1>") + document.getElementById('input').value;
+  document.getElementById("header").style.color = "green";
+}
+}
+</script>
   <section>
+    <h1 id="header">Hello</h1>
+    <p>What do you go by?</p>
+ 
+    <input type = 'text' id = "input" />
+       <button onclick="hello_name()"> Call me </button>
+  </section>
+
+    
+    <section>
+    
+    
+    <hr />
     <div id = "plus"></div>
      <div id = "compare1"></div>
       <div id = "compare2"></div>
@@ -138,8 +169,8 @@
         
       var x=10, y=5;
       document.write("ckeck plus: \n x+ y = " +(x + y));
-
-      document.getElementById("plus").innerHTML =x + y;
+// check and excecute which script call this id by getElementById
+     // document.getElementById("plus").innerHTML =x + y;
   
       </script>
        <script>
