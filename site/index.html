@@ -135,8 +135,9 @@
   <script type= text/javascript>
  function hello_name(){
    var noname="";
-//  console.log("document.getElementById('input')");
-  
+   var inp= document.getElementById('input').value;
+//  console.log(document.getElementById('input'));
+  console.log(inp.length);
   if (document.getElementById('input').value == noname)
   {
     
@@ -172,7 +173,7 @@ document.getElementById("header").style.color = "red";
       document.write("ckeck plus: \n x+ y = " +(x + y));
 // check and excecute which script call this id by getElementById
      // document.getElementById("plus").innerHTML =x + y;
-  
+     
       </script>
        <script>
             var x=10, y=5;
